@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Etch-a-sketch</h1>
+    </div>
+
+    <div class="main">
+        <div class="settings">
+            <input type="color" id="color-picker" value="#ffffff"/>
+            <button  id="color-btn" class="active">Color mode</button>
+            <button id="rainbow-btn">Rainbow mode</button>
+            <button id="darken-btn">Darken mode</button>
+            <button id="eraser-btn">Eraser</button>
+            <button id="clear-btn">Clear</button>
+            <button id="toggle-grid-btn">Toggle Grid</button>
+            <p>Grid size: <span class="size-value" id="size-value">16 x 16</span></p>
+            <input id="size-slider" type="range" value="16" min="1" max="64"/>
+        </div>
+        <div id="grid" class="grid grid-on"></div>
+    </div>
+
+    <div class="footer">
+        <p>
+            Copyright ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            Andu
+        </p>
+    </div>
+</body>
+</html>
